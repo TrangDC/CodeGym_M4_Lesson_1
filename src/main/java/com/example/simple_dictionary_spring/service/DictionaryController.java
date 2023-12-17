@@ -14,11 +14,13 @@ import java.util.Map;
 @Controller
 public class DictionaryController {
 
+//    private DictionaryImpl dictionary;
+//
+//    public DictionaryController() {
+//        this.dictionary = new DictionaryImpl();
+//    }
+    @Autowired
     private DictionaryImpl dictionary;
-
-    public DictionaryController() {
-        this.dictionary = new DictionaryImpl();
-    }
 
     @GetMapping("/dictionary")
     public String showForm() {

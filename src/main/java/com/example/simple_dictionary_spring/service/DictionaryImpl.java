@@ -1,8 +1,10 @@
 package com.example.simple_dictionary_spring.service;
 
+import org.springframework.stereotype.Service;
+
 import java.util.HashMap;
 import java.util.Map;
-
+@Service
 public class DictionaryImpl {
     private static Map<String,String> words;
 
